@@ -1,0 +1,85 @@
+.blue_message 
+    background-color: #1967D2
+    padding: 17px 0 21px
+    span
+        display: flex
+        justify-content: center
+        color: #fff
+
+.header 
+    background-color: #fff
+    padding: 21px 0 15px
+    .header__nav
+        display: flex
+        justify-content: space-between
+        padding: 0 20px
+        .header__nav__lists
+            display: flex
+            gap: 20px
+            list-style-type: none
+            a
+                text-decoration: none
+                color: #3C4043
+        .header__nav__icons 
+            display: flex
+            gap: 24px
+            list-style-type: none
+        .header__nav__button
+            display: none
+            margin-left: auto
+            background: none
+            border: none
+            cursor: pointer
+            img
+                width: 32px
+
+    @media screen and (max-width: 965px) 
+        .header__nav 
+            .header__nav__lists
+                position: fixed
+                top: 0
+                left: -250px
+                flex-direction: column
+                width: 220px
+                height: 100%
+                background-color: #fff
+                border-bottom-right-radius: 10px
+                border-top-right-radius: 10px
+                box-shadow: 0 0 30px 14px
+                z-index: 1
+                transition: transform 0.3s linear
+                padding: 50px 55px
+            .header__nav__button
+                display: block
+            .header__nav__lists.active
+                transform: translateX(100%) 
+
+.footer
+    .footer__content
+        .line
+            border: 1px solid #F2F2F2
+        ul
+            list-style-type: none
+        .footer__content__lists
+            display: flex
+            justify-content: end
+            gap: 75px
+            padding-bottom: 71px
+            ul
+                display: flex
+                flex-direction: column
+                gap: 24px
+        .footer__content__lists-below
+            display: flex
+            justify-content: space-between
+            padding-top: 16px
+            flex-wrap: wrap
+
+            ul
+                display: flex
+                flex-wrap: wrap
+                &:nth-child(1)
+                    gap: 16px
+                &:nth-child(2)
+                    gap: 40px
+                    

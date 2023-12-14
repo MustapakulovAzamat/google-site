@@ -1,0 +1,358 @@
+$backgroundImageUrl: url("../assets/main-images/main-image.jpg")
+
+
+.main
+    background-image: $backgroundImageUrl
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    width: 100%
+    height: 100vh
+    .main__content
+        display: flex
+        flex-direction: column
+        gap: 22px
+        padding: 168px 129px
+        .main__content__title
+            display: flex
+            flex-direction: column
+            gap: 20px
+            .core__title
+                font-size: 57px
+                line-height: 68px
+                text-align: left
+                margin: inherit
+            span
+                width: 325px
+        .main__content__button
+            display: flex
+            align-content: center
+            gap: 25px
+    @media screen and (max-width: 500px)
+        .main__content
+            display: flex
+            align-items: center
+            .main__content__title
+                text-align: center
+                .core__title
+                    width: 100%
+                    font-size: 45px
+                    line-height: 60px
+                span
+                    width: 100%
+            .main__content__button
+                flex-direction: column
+                .core__button
+                    display: block
+                    width: 100px
+                    a
+                        padding: 0
+
+.gadjets
+    padding-bottom: 169px
+    .gadjets__content
+        h2
+            text-align: center
+            padding: 79px 0 90px
+            font-weight: 400
+        .gadjets__content__blocks
+            display: flex
+            gap: 23px
+            flex-wrap: nowrap
+            overflow-x: auto
+            .gadjets__content__block
+                flex: 0 0 auto
+                &:hover
+                    .gadjets__content__block-btn
+                        background: #1967D2
+                        transition: all 0.5s ease 
+                        span
+                            color: #fff                           
+                h3
+                    font-size: 16px
+                    font-weight: 400
+                .gadjets__content__block-btn
+                    width: 230px
+                    border-radius: 20px
+                    background: #F8F9FA
+                    padding: 20px 29px
+                    border: none
+                    cursor: pointer
+                    span
+                        display: flex
+                        color: #1967D2
+                    img
+                        width: 113px
+                        height: 156px
+
+.nba
+    padding-bottom: 80px
+    .nba__content
+        display: flex
+        gap: 117px
+        align-items: center
+        border-radius: 28px
+        background: #F8F9FA
+        .nba__content__title
+            display: flex
+            flex-direction: column
+            gap: 25px
+            h4
+                font-size: 32px
+                font-weight: 400
+                width: 100%
+                line-height: 40px
+            span
+                width: 100%
+            a
+                color: #1967D2
+        .nba__content__img
+            img
+                width: 100%
+    @media screen and (max-width: 965px)
+        .nba__content
+            flex-direction: column
+            gap: 30px
+            .nba__content__title
+                text-align: center
+
+.gadjetsMore
+    padding-bottom: 119px
+    .gadjetsMore__content
+        display: flex
+        flex-direction: column
+        gap: 24px
+        .gadjetsMore__content__blocks
+            display: flex
+            gap: 24px
+            .gadjetsMore__content__block
+                width: 395px
+                border-radius: 28px
+                background: #E9E3DB
+                .gadjetsMore__block__title
+                    display: flex
+                    flex-direction: column
+                    gap: 15px
+                    text-align: center
+                    padding: 20px
+                    h4
+                        text-align: center
+                        font-weight: 400
+                    .core__button
+                        width: 126px
+                        margin: 0 auto
+                        padding: 0
+                        a
+                            padding: 0
+                            display: block
+            .gadjetsMore__block__img
+                img
+                    width: 100%
+            .gadjetsMore__block__img 
+                display: flex
+        .gadjetsMore__content__blocks-below
+            display: flex
+            gap: 24px
+            .gadjetsMore__content__block:nth-child(1)
+                    width: 604px
+                    border-radius: 28px
+                    background: #D6E2DB
+                    .gadjetsMore__block__title
+                        display: flex
+                        flex-direction: column
+                        gap: 15px
+                        text-align: center
+                        padding: 40px 0
+                        h4
+                            font-weight: 400
+                        .core__button
+                            width: 123px
+                            margin: 0 auto
+                            a
+                                padding: 0
+                                display: block
+                    .gadjetsMore__block__img
+                        display: flex
+                        img
+                            width: 100%
+            .gadjetsMore__content__block:nth-child(2)
+                    width: 604px
+                    border-radius: 28px
+                    background: #EFDDCD
+                    .gadjetsMore__block__title
+                        display: flex
+                        flex-direction: column
+                        gap: 15px
+                        text-align: center
+                        padding: 40px 0
+                        h4
+                            font-weight: 400
+                        .core__button
+                            width: 123px
+                            margin: 0 auto
+                            a
+                                padding: 0
+                                display: block
+                    .gadjetsMore__block__img
+                        display: flex
+                        img
+                            width: 100%
+        @media screen and (max-width: 1235px)
+            .gadjetsMore__content__blocks
+                flex-wrap: wrap
+                justify-content: center
+            .gadjetsMore__content__blocks-below
+                flex-wrap: wrap
+                justify-content: center
+
+.category
+    padding-bottom: 122px
+    .category__content
+        display: flex
+        flex-direction: column
+        gap: 43px
+        h2
+            font-size: 40px
+            font-weight: 400
+            line-height: 48px
+            text-align: center
+        .category__content__blocks
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            gap: 24px
+            .category__content__block
+                display: flex
+                flex-direction: column
+                align-items: center
+                a
+                    color: #1967D2
+
+.explore
+    padding-bottom: 129px
+    .explore__blocks
+        display: flex
+        gap: 24px
+        .explore__block:nth-child(1)
+            width: 604px
+            border-radius: 28px
+            background: #F3F2F1
+            .explore__block__title
+                display: flex
+                flex-direction: column
+                gap: 15px
+                padding: 40px 0px
+                h4
+                    text-align: center
+                    font-weight: 400
+                .core__button
+                    width: 160px
+                    margin: 0 auto
+                    a
+                        padding: 0
+                        display: block
+            .explore__block__img
+                display: flex
+                img
+                    width: 100%
+        .explore__block:nth-child(2)
+            width: 604px
+            border-radius: 28px
+            background: #E7EBEE
+            .explore__block__title
+                display: flex
+                flex-direction: column
+                gap: 15px
+                padding: 40px 0px
+                h4
+                    text-align: center
+                    font-weight: 400
+                .core__button
+                    width: 160px
+                    margin: 0 auto
+                    a
+                        padding: 0
+                        display: block
+            .explore__block__img
+                display: flex
+                img
+                    width: 100%
+    @media screen and (max-width: 1235px)
+        .explore__blocks
+            flex-wrap: wrap
+            justify-content: center
+           
+.putting 
+    padding-bottom: 140px
+    .putting__content
+        display: flex
+        align-items: center
+        gap: 129px
+        .putting__content__title
+            display: flex
+            flex-direction: column
+            gap: 19px
+            .core__title
+                width: 392px
+                text-align: left
+                margin: 0
+            span
+                width: 100%
+            .core__button
+                width: 126px
+    .putting__content__img
+        img
+            width: 100%
+    @media screen and (max-width: 1148px)
+        .putting__content
+            flex-direction: column
+            gap: 0px
+            .putting__content__title
+                text-align: center
+                align-items: center
+
+                .core__title
+                    text-align: center
+                    width: 100%
+
+.login
+    padding-bottom: 118px
+    .login__content
+        display: flex
+        flex-direction: column
+        gap: 42px
+        .login__content__title-img
+            display: flex
+            flex-direction: column
+            gap: 16px
+            img
+                width: 48px
+                margin: 0 auto
+            .core__title
+                width: 580px
+        .login__content__button
+            display: flex
+            justify-content: center
+            flex-direction: column
+            gap: 28px
+            .core__button
+                width: 176px
+                margin: 0 auto
+                a
+                    padding: 0
+                    display: block
+            .login-link
+                text-align: center
+                color: #1967D2
+        @media screen and (max-width: 610px)
+            .login__content__title-img 
+                .core__title
+                    width: 100%
+
+.info 
+    padding-bottom: 118px
+    span
+        padding-left: 15px
+        font-size: 12px
+
+
